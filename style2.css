@@ -1,0 +1,275 @@
+.mostjust{
+    column-gap: 100px;
+}
+
+.mostjust .most,.just {
+  width: 300px; /* Adjust carousel size */
+}
+
+.mostjust .product-card {
+  position: relative;
+  text-align: center;
+  padding: 15px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  height: 50vh;
+}
+
+.mostjust .product-card img {
+  width: 160px;
+  height: 140px;
+  object-fit: contain;
+  margin: 0px auto;
+  display: block;
+}
+
+.mostjust .discount1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  color: #fff;
+  font-size: 14px;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.mostjust .wishlist1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.mostjust .product-title1 {
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.mostjust .rating1 {
+  font-size: 14px;
+  color: #555;
+}
+
+.mostjust .price1 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 6px 0;
+}
+
+.mostjust .quantity1 {
+  margin-top: 8px;
+}
+
+.mostjust .quantity1 input {
+  width: 50px;
+  padding: 3px;
+  text-align: center;
+}
+
+.mostjust .add-to-cart1 {
+  display: inline-block;
+  margin-left: 8px;
+  background: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 5px solid blue;
+}
+
+.mostjust .carousel-control-prev-icon,
+.mostjust .carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.mostjust .names{
+    display: flex
+}
+
+
+/* Our Recent Blog */
+.blog{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 60px 0px;
+    border: 2px red solid;
+}
+
+.blogicon{
+    display: flex;
+    width: 100%;
+    height: 86vh;
+    border: 2px solid green;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.blogicon .blogicon1{
+    border: 3px solid yellow;
+    width: 30%;
+    height: 80vh;
+}
+.blogicon1 img{
+    height: 300px;
+    width: 100%;
+}
+
+ /* <!-- App Store & download --> */
+.appstore{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid pink;
+    height: 90vh;
+    column-gap: 20px;
+    margin: 50px 0px;
+}
+.appstore .phone1{
+    width: 30%;
+}
+.phone1 img{
+    height: 100vh;
+    width: 100%;
+}
+.appstore .app{
+    width: 60%;
+}
+
+/* <!-- People are also looking for --> */
+.people_text{
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+}
+.people_text p{
+    background-color: yellow;
+    color: rgb(10, 1, 2);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* <!-- our features --> */
+.features1{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.features{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 15px;
+}
+.f1{
+width: 18%;
+height: 30vh;
+border: 3px solid rgb(241, 197, 205);
+padding: 10px 10px;
+border-radius: 10px;
+}
+.f1 img{
+    width: 45px;
+    height: 40px;
+}
+.f1 b{
+    font-weight:700 ;
+    font-size: medium;
+    /* font-weight: bold; */
+}
+
+
+/* <!-- Testimonial --> */
+ .testimonial-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .testimonial-section h2 {
+      font-family: "Brush Script MT", cursive;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    .testimonial-container {
+      overflow: hidden;
+      position: relative;
+    }
+    /* Common Row Styles */
+    .testimonial-row {
+      display: flex;
+      gap: 20px;
+      margin: 20px 0;
+      width: max-content;
+    }
+    /* Card Style */
+    .testimonial-card {
+      background: #fff8f0;
+      border: 1px solid #f2d6a2;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
+      position: relative;
+    }
+    .testimonial-card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .testimonial-card h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .testimonial-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .stars {
+      color: gold;
+      margin: 5px 0;
+    }
+
+    /* Quote Icon */
+    .quote {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 24px;
+      color: #c9a34e;
+    }
+
+    /* Animations */
+    .top-row {
+      animation: moveLeft 15s linear infinite;
+    }
+
+    .bottom-row {
+      animation: moveRight 15s linear infinite;
+    }
+
+    @keyframes moveLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    @keyframes moveRight {
+      0% { transform: translateX(-50%); }
+      100% { transform: translateX(0); }
+    }
+
+
+/* footer */
