@@ -1,0 +1,159 @@
+
+/* <!-- catageory --> */
+
+@media (max-width: 1024px) {
+  .slider, .slider2 {
+    max-width: 95%;
+    gap: 0.8rem;
+    height: calc(160px + 2rem);
+  }
+
+  .slider img, .slider2 .class {
+    width: 160px;
+    height: 140px;
+  }
+
+  .slider b {
+    margin: 0 40px;
+    font-size: large;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider, .slider2 {
+    max-width: 100%;
+    gap: 0.6rem;
+    height: calc(120px + 2rem);
+    padding: 0.5rem;
+  }
+
+  .slider img, .slider2 .class {
+    width: 120px;
+    height: 100px;
+  }
+
+  .slider b {
+    margin: 0 20px;
+    font-size: medium;
+  }
+}
+
+/* newly Arrived Brands */
+/* Tablet screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .slider{
+    height: 50vh;
+  }
+  .slider2 .class {
+    width: 280px;
+    height: 40v;
+    flex-direction: column;  
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .slider2 .image {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .slider2 .para {
+    max-width: 100%;
+    padding: 5px 15px;
+  }
+}
+
+/* Mobile screens (max-width: 600px) */
+@media (max-width: 600px) {
+  .slider2{
+    height: 50vh;
+  }
+  .slider2 .class {
+    width: 200px;
+    height: 40vh;
+    padding: 8px;
+    margin: 0 auto;
+  }
+
+  .slider2 .image {
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .slider2 .para {
+    max-width: 100%;
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}
+
+
+
+
+/* mostpular Products */
+@media (max-width: 1024px) {
+  .mostjust {
+    flex-direction: column;  
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    column-gap: 0;
+  }
+
+  .mostjust .most,
+  .mostjust .just {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .mostjust .product-card {
+    height: auto;
+  }
+
+  .mostjust .product-card img {
+    width: 140px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mostjust {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 15px;
+  }
+
+  .mostjust h1 {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .mostjust .product-card {
+    padding: 10px;
+  }
+
+  .mostjust .product-card img {
+    width: 120px;
+    height: 100px;
+  }
+
+  .mostjust .product-title1 {
+    font-size: 14px;
+  }
+
+  .mostjust .rating1,
+  .mostjust .price1 {
+    font-size: 13px;
+  }
+
+  .mostjust .add-to-cart1 {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+}
+
+
