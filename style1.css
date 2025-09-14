@@ -1,8 +1,13 @@
 .trending {
   display: flex;
-  align-items: center;
+  align-items: center ;
   justify-content: space-between;
-  border: 2px solid blue;
+  padding-bottom: 20px;
+}
+.trending h1,a{
+  font-family: "Nunito", sans-seri;
+  font-weight: 100;
+  padding-left: 20px;
 }
 
 /* trending_icons */
@@ -19,7 +24,7 @@
   background: #fff;
   width: 230px;
   border-radius: 16px;
-  box-shadow: 0 10px 20px rgba(186, 40, 189, 1.15);
+  box-shadow: 0 10px 20px rgba(186, 40, 189, 0.25);
   padding: 15px;
   text-align: center;
   position: relative;
@@ -145,27 +150,68 @@
 
 /* luxacreamy */
 .luxacreamy{
-  border: 2px solid red;
   width: 100%;
   height: 80vh;
   display: flex;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.luxacreamy p{
+      font-family: 'Garamond';
+      color: #ffc43f;
+          font-weight: 700 !important;
+          font-size: calc(1.3rem + .6vw) !important;
+}
+.luxacreamy h1{
+      letter-spacing: 0.02em;
+    font-size: 33px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    color: #222222;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+.luxacreamy h5{
+   font: 16px "Open Sans", sans-serif;
+    margin: 0px 0px 16px;
+    color: #584c4c;
+}
+.luxacreamy button{
+   font: 16px "Open Sans", sans-serif;
+    padding: 6px 12px;
+    background: #212529;
+    color: #ffffff;
+    border-radius: 7px;
 }
 .luxa{
-  display: flex;
-  width: 50%;
+  display: block;
+  width: 45%;
   height: 50vh;
-  border:2px solid #4CAF50;
+  background-image: url("./images/luxa_dark.png");
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-position: top -20px right -120px;
+  background-size: 500px;
+      padding: 3rem !important;
+  border-radius: 10px;
+  background-color: rgb(245, 232, 240);
   
 }
 .creamy{
   display: block;
-  width: 50%;
+  width: 45%;
   height: 50vh;
-  border:3px solid green; 
-  background-image: url("./images/mid-fix-removebg-preview.png");
+  background-image: url("./images/creamy.png");
   z-index: 9;
   background-repeat: no-repeat;
   background-position: top right 10px;
+      padding: 3rem !important;
+      border-radius: 10px;
+      background-color: rgb(194, 225, 237);
 }
 
 
@@ -174,7 +220,7 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  background: #f5f5f5;
+  background: #f6f3f3;
   padding: 20px 0;
 }
 
@@ -282,28 +328,124 @@
 
 
 /* form */
-.form,.mostjust{
+.form{
   display: flex;
   margin: auto;
   justify-content: center;
   align-items: center;
-  border: 5px solid red;
+  background-color: paleturquoise;
   height: 90vh;
-  width: 90%;
-  margin-top: 100px;
+  max-width: 1300px;
   border-radius: 40px;
+  column-gap: 60px;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
 }
-.form1,.most{
-  border: 2px solid green;
-  height: 50vh;
+.form1{
+  height: 70vh;
   width: 40%;
+  padding: 2rem !important;
 }
-.form2,.just{
-  border: 2px solid yellow;
-  height: 50vh;
-  width: 40%;
+.form1 h2{
+      font-weight: 800;
+      font-size: calc(0.975rem + 2.2vw);
+      line-height: 1.2;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.mostjust{
-  background-color: #ec6dbe;
+.form1 .text{
+  color: rgba(255, 196, 63, 1);
+}
+
+.form1 p{
+  font: 16px "Open Sans", sans-serif;
+    margin: 0px 0px 16px;
+    color: #584c4c;
+}
+
+.form2 {
+  background: #42c4ca;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 420px;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.form2 h3 {
+  margin: 15px 0 5px;
+  font-size: 18px;
+  color: #171515;
+}
+
+.form2 input[type="text"],
+.form2 input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.form2 input[type="text"]:focus,
+.form2 input[type="email"]:focus {
+  border-color: #ff7a59;
+  box-shadow: 0 0 8px rgba(255, 122, 89, 0.5);
+  transform: scale(1.05);
+}
+
+.form2 input[type="checkbox"] {
+  margin: 10px 0;
+  accent-color: #2207ea;
+}
+
+.form2 button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #d2765f, #e0a83e);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+  animation: bounce 2s infinite;
+}
+
+.form2 button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(255, 122, 89, 0.5);
+}
+
+.form2 button a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
