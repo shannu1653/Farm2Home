@@ -282,6 +282,7 @@ header {
   }
 }
 
+
 /* Photos Section */
 .photos {
   display: flex;
@@ -290,6 +291,11 @@ header {
   align-items: stretch;
   flex-wrap: wrap;
 }
+.col-md-6 h1{
+    color:rgb(234, 234, 13);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    
+} 
 
 .photos .child1 {
   flex: 2;
@@ -327,6 +333,8 @@ header {
   justify-content: flex-start;
 }
 
+
+
 .fruit img,
 .baked img {
   width: 290px;
@@ -356,6 +364,17 @@ header {
   }
 }
 
+/* catageory */
+.catageory h1{
+  font-family: var(--heading-font);
+  color: var(--dark-color);
+  font-weight: 700;
+  font-size: calc(1.325rem + .9vw);
+  margin-left: 15px;
+  padding-top: 50px;
+}
+
+
 /* slider */
 .slider,.slider2 {
   margin: 50px auto;
@@ -365,7 +384,6 @@ header {
   height: calc(200px +3rem);
   padding: 1rem;
   max-width: 1200px;
-  border: 5px solid blue;
   /* Only horizontal scroll */
   overflow-x: auto;
   overflow-y: hidden;
@@ -376,6 +394,13 @@ header {
   /* Smooth scroll effect */
   scroll-behavior: smooth;
 }
+.slider b{
+  margin:0px 60px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  font-size: x-large;
+}
+/* .slider .burger b{margin-right:2px ; margin-left: 10px;} */
 
 .slider > a,.slider2 .class{
   scroll-snap-align: center;
