@@ -7,17 +7,33 @@
 }
 
 header {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; 
+  background-color: white; 
+  top: 0;
+  left: 0;
   width: 100%;
-  background: #fff;
-  border-bottom: 2px solid #eee;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 10px 30px;
+  /* border-bottom: 2px solid #ccc; */
+  padding: 3px 0px 5px 5px;
+  z-index: 1000;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed; 
+  background-color: white; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* border-bottom: 2px solid #ccc; */
+  padding: 3px 0px 5px 5px;
+  z-index: 1000;
+
+  
 }
 
 /* Logo */
@@ -27,25 +43,25 @@ header {
 }
 
 /* Search */
-.search {
+.search1 {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.search select,
-.search input {
+.search1 select,
+.search1 input {
   border: 1px solid #ccc;
   border-radius: 6px;
   outline: none;
   font-size: 14px;
 }
 
-.search select {
+.search1 select {
   padding: 8px;
 }
 
-.search form {
+.search1 form {
   display: flex;
   align-items: center;
   border: 1px solid #ccc;
@@ -53,13 +69,13 @@ header {
   overflow: hidden;
 }
 
-.search input {
+.search1 input {
   border: none;
   padding: 10px;
   width: 280px;
 }
 
-.search img {
+.search1 img {
   width: 20px;
   margin: 0 10px;
   cursor: pointer;
@@ -103,32 +119,45 @@ header {
   font-size: 15px;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-  .search input {
-    width: 180px;
-  }
-}
-
-@media (max-width: 768px) {
+@media  screen and (min-width:320px) and (max-width:426px) {
   .nav {
     flex-direction: column;
     gap: 15px;
   }
-
-  .search {
-    width: 100%;
+  .nav .search1 select{
+    width:110px;
     justify-content: center;
   }
-
+   .search1 input {
+    width: 110px;
+  }
   .phone {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
   }
+  .phone p{
+    margin: 0px;
+  }
+  .phone .p1{
+    margin-left: 45px;
+  }
+  .phone button {
+ 
+  padding: 0px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
 }
 
 /* General navbar styles */
 .nav2 {
+  margin-top: 100px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -420,7 +449,6 @@ header {
   transform: scale(1.08);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
-
 .slider > a:nth-child(1) img {
   box-shadow: 0 4px 10px rgba(235, 2, 94, 1.3);
 }
