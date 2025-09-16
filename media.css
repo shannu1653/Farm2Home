@@ -1,20 +1,23 @@
-
 /* <!-- catageory --> */
 
-@media  screen and (min-width:426px) and (max-width:759px) {
-  body{
+@media screen and (min-width:426px) and (max-width:759px) {
+  body {
     border: 5px solid red;
   }
-  .slider, .slider2 {
+
+  .slider,
+  .slider2 {
     max-width: 95%;
     gap: 0.8rem;
     height: calc(160px + 2rem);
   }
-  
+
   .slider {
-        height: 30vh;
-    }
-  .slider img, .slider2 .class {
+    height: 30vh;
+  }
+
+  .slider img,
+  .slider2 .class {
     width: 160px;
     height: 140px;
   }
@@ -25,36 +28,57 @@
   }
 }
 
-@media  screen and (min-width:320px) and (max-width:426px) {
-   body{
+@media screen and (min-width:320px) and (max-width:426px) {
+  body {
     border: 5px solid red;
   }
-  .slider, .slider2 {
-    max-width: 100%;
-    gap: 0.1rem;
-    height: 40vh;
+
+  .catageory h1 {
+    font-family: "Nunito", sans-seri;
+    font-weight: 1000;
+    margin-left: 15px;
+    padding-top: 15px;
+    border: 3ps solid rgb(9, 28, 172);
   }
 
-  .slider img, .slider2 .class {
+  .slider {
+    max-width: 100%;
+    gap: 0.1rem;
+    margin: 20px 0px;
+    border: 3px solid yellow;
+
+  }
+
+  .slider img,
+  .slider2 .class {
     width: 120px;
     height: 100px;
   }
+
   .slider {
-        height: 30vh;
-    }
+    height: 30vh;
+  }
+
   .slider b {
     margin: 0 2px;
     font-size: medium;
+    font-weight: 800;
+    padding-left: 30px;
+  }
+
+  .slider a {
+    height: 25vh;
+
   }
 }
 
 /* newly Arrived Brands */
 /* Tablet screens (max-width: 1024px) */
-@media  screen and (min-width:426px) and (max-width:759px) {
+@media screen and (min-width:426px) and (max-width:759px) {
   .slider2 .class {
     width: 280px;
     height: 40v;
-    flex-direction: column;  
+    flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 10px;
@@ -72,20 +96,40 @@
 }
 
 /* Mobile screens (max-width: 600px) */
-@media  screen and (min-width:320px) and (max-width:426px) {
-  .slider2{
+@media screen and (min-width:320px) and (max-width:426px) {
+  .slider2 {
     height: 50vh;
+    margin: 20px auto;
   }
+
+  .brands h1 {
+    font-family: "Nunito", sans-seri;
+    font-weight: 800;
+    margin-left: 15px;
+    padding-top: 5px;
+  }
+
   .slider2 .class {
+    display:block;
     width: 200px;
-    height: 40vh;
+    height: 42vh;
     padding: 8px;
     margin: 0 auto;
+    border: 0.5px solid rgb(157, 208, 157);
+    text-align: center;
   }
 
   .slider2 .image {
-    max-width: 100%;
-    margin-bottom: 8px;
+    max-width: 75%;
+    height: 126px;
+    margin-left: 25px;
+    margin-top: 0px;
+
+  }
+  .slider2 img{
+    margin: 0px 0px 0px 0px !important;
+    width:130px ;
+    height: 120px;
   }
 
   .slider2 .para {
@@ -95,13 +139,58 @@
   }
 }
 
+/* Trending Products */
+@media screen and (min-width: 320px) and (max-width: 426px) {
+  .trending {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    /* border: 2px solid yellow;  (use only for debugging) */
+  }
+
+  .trending h1,
+  .trending a {
+    font-size: 1.5rem;
+    padding-left: 5px;
+  }
+
+  .iconic {
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 15px; 
+    
+  }
+
+  .card {
+    width: 90%;             
+    margin: 10px auto;       
+    height: auto !important; 
+   
+  }
+
+  .card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover; 
+  }
+
+  .add-to-cart {
+    width: 95%;
+    margin-left: 0;
+  }
+
+  .quantity input {
+    width: 60px; 
+  }
+}
+
 
 
 
 /* mostpular Products */
-@media  screen and (min-width:320px) and (max-width:426px) {
+@media screen and (min-width:320px) and (max-width:426px) {
   .mostjust {
-    flex-direction: column;  
+    flex-direction: column;
     width: 95%;
     height: auto;
     padding: 20px;
@@ -109,6 +198,7 @@
     text-align: center;
     border-radius: 20px;
   }
+
   .mostjust .most,
   .mostjust .just {
     width: 100%;
@@ -124,21 +214,25 @@
     width: 140px;
     height: 120px;
   }
-  .most h1,.just h1{
+
+  .most h1,
+  .just h1 {
     margin-left: -20px;
     text-align: center;
   }
-  .most h1{
+
+  .most h1 {
     font-size: x-large;
     margin-left: 20px;
   }
-  .most .product{
+
+  .most .product {
     /* margin: -10px; */
     margin-left: -10px;
   }
 }
 
-/* @media  screen and (min-width:320px) and (max-width:426px) {
+/* @media  screen and (min-width:320px) and (max-width:426px) 
   .mostjust {
     width: 100%;
     border-radius: 20px;
@@ -172,41 +266,47 @@
 
   .mostjust .add-to-cart1 {
     font-size: 13px;
-    padding: 4px 8px;
-  }
-} */
+    pa
 
- /* <!-- luxacreamy 151css --> */
+/* <!-- luxacreamy 151css --> */
 
-@media  screen and (min-width:320px) and (max-width:426px) {
+@media screen and (min-width: 320px) and (max-width: 426px) {
   .luxacreamy {
-    flex-direction: column; 
-    height: auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    height: auto;
     padding: 2rem 1rem !important;
-    row-gap: 20px; 
+    row-gap: 20px;         
   }
 
   .luxa,
   .creamy {
     width: 100%;
-    height: auto; 
-    background-size: cover; 
+    height: auto;
+    background-size: cover;
+    background-position: center; 
     padding: 2rem !important;
+    box-sizing: border-box;
   }
 
   .luxacreamy h1 {
-    font-size: 24px; 
+    font-size: 24px;
     text-align: center;
+    margin-bottom: 10px;      
   }
 
   .luxacreamy p,
   .luxacreamy h5 {
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .luxacreamy button {
     display: block;
-    margin: 10px auto; 
+    margin: 10px auto;
+    width: 80%;               
+    max-width: 300px;
   }
 }
 
@@ -221,9 +321,9 @@
 
   .luxa,
   .creamy {
-    width: 80%; 
+    width: 80%;
     height: auto;
-    background-size: contain; 
+    background-size: contain;
     padding: 2.5rem !important;
   }
 
@@ -247,30 +347,30 @@
 
 
 
-  /* <!-- Our Recent Blog  128#style2--> */
+/* <!-- Our Recent Blog  128#style2--> */
 
 
-@media  screen and (min-width:320px) and (max-width:426px) {
+@media screen and (min-width:320px) and (max-width:426px) {
   .blog {
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
-    margin: 30px 0; 
+    margin: 30px 0;
   }
 
   .blog .blogname h1,
   .read a {
-    margin-left: 0; 
+    margin-left: 0;
     font-size: 1.2rem;
   }
 
   .blogicon {
-    flex-direction: column; 
+    flex-direction: column;
     height: auto;
-    gap: 20px; 
+    gap: 20px;
   }
 
   .blogicon .blogicon1 {
-    width: 90%; 
+    width: 90%;
     height: auto;
   }
 
@@ -280,60 +380,101 @@
   }
 
   .blogicon1 .blogcontent {
-    width: 100%; 
+    width: 100%;
     height: auto;
   }
 
   .blogicon1 h4 {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }
 
 @media (min-width: 426px) and (max-width: 759px) {
   .blog {
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
     margin: 40px 0;
   }
+
   .blogicon {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     height: auto;
     gap: 20px;
   }
+
   .blogicon .blogicon1 {
-    width: 45%; 
+    width: 45%;
     height: auto;
   }
+
   .blogicon1 img {
-    height: auto; 
+    height: auto;
     width: 100%;
   }
+
   .blogicon1 .blogcontent {
     width: 100%;
     height: auto;
   }
+
   .blogicon1 h4 {
     font-size: 1.1rem;
   }
 }
 
-  /* <!-- footer --> */
+/* People are looking for */
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .container2 {
+    width: 95%;
+    margin: 0 auto;
+  }
 
-@media  screen and (min-width:320px) and (max-width:426px){
-  .footer-container{
+  .container2 h2 {
+    font-size: 24px; /* mobile-friendly heading */
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .tags {
+    justify-content: center; /* stack tags in center */
+    gap: 8px;
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .tags span {
+    font-size: 12px; /* smaller tag text */
+    padding: 6px 12px; /* tighter padding */
+  }
+}
+
+
+
+
+
+
+
+/* <!-- footer --> */
+
+@media screen and (min-width:320px) and (max-width:426px) {
+  .footer-container {
     text-align: center;
   }
-  .footer-logo{
+
+  .footer-logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .social-icons{
+
+  .social-icons {
     gap: 0px;
     justify-content: space-evenly;
   }
-  .social-icons img{
+
+  .social-icons img {
     width: 30px;
     height: 30px;
     gap: 0px;
@@ -344,12 +485,12 @@
 /* <!-- get 25%  discount on your  330--> */
 
 /* 📱 Mobile Devices (320px - 426px) */
-@media  screen and (min-width:320px) and (max-width:426px) {
+@media screen and (min-width:320px) and (max-width:426px) {
   .form {
-    flex-direction: column; 
-    height: auto; 
+    flex-direction: column;
+    height: auto;
     padding: 2rem 1rem !important;
-    row-gap: 30px; 
+    row-gap: 30px;
   }
 
   .form1 {
@@ -359,12 +500,12 @@
   }
 
   .form2 {
-    width: 100%; 
+    width: 100%;
     padding: 20px;
   }
 
   .form1 h2 {
-    font-size: 24px; 
+    font-size: 24px;
   }
 
   .form1 p {
@@ -375,21 +516,21 @@
 
 @media (min-width: 426px) and (max-width: 759px) {
   .form {
-    flex-direction: column; 
+    flex-direction: column;
     height: auto;
     padding: 3rem 2rem !important;
     row-gap: 40px;
   }
 
   .form1 {
-    width: 80%; 
+    width: 80%;
     height: auto;
     text-align: center;
     margin: 0 auto;
   }
 
   .form2 {
-    width: 80%; 
+    width: 80%;
     margin: 0 auto;
     padding: 25px;
   }
@@ -410,27 +551,28 @@
 
 
 /* <!-- App Store & download 174 --> */
-@media  screen and (min-width:320px) and (max-width:426px){
- .appstore {
-  flex-direction: column; 
-  width: 95%;
-  height: auto; 
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
-  row-gap: 20px; 
+@media screen and (min-width:320px) and (max-width:426px) {
+  .appstore {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    row-gap: 20px;
   }
 
   .appstore .phone1,
   .appstore .app {
-    width: 100%; 
+    width: 100%;
   }
 
   .phone1 img {
     height: auto;
     width: 100%;
   }
-  .app img{
+
+  .app img {
     text-align: center;
     padding: 10px 10px;
     border-radius: 20px;
@@ -439,3 +581,62 @@
 }
 
 
+
+/* our features */
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .features1 {
+    font-size: 24px; 
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .features {
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .f1 {
+    width: 90%; 
+    min-width: unset;
+    padding: 15px;
+  }
+
+  .f1 img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .f1 b {
+    font-size: 15px;
+  }
+
+  .f1 p {
+    font-size: 13px;
+  }
+}
+
+
+/* Tablet screens (426px–768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .features1 {
+    font-size: 32px; 
+    padding-left: 10px;
+    text-align: center; 
+    margin-bottom: 15px;
+  }
+
+  .features {
+    justify-content: center; 
+    gap: 20px;
+    padding: 15px 0;
+  }
+
+  .f1 {
+    width: 45%; 
+    min-width: unset; 
+    padding: 20px;
+  }
+}
