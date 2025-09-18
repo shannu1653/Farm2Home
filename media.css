@@ -1,6 +1,6 @@
 /* <!-- catageory --> */
 
-@media screen and (min-width:426px) and (max-width:759px) {
+@media screen and (min-width:426px) and (max-width:789px) {
   body {
     border: 5px solid red;
   }
@@ -29,9 +29,6 @@
 }
 
 @media screen and (min-width:320px) and (max-width:426px) {
-  body {
-    border: 5px solid red;
-  }
 
   .catageory h1 {
     font-family: "Nunito", sans-seri;
@@ -74,7 +71,7 @@
 
 /* newly Arrived Brands */
 /* Tablet screens (max-width: 1024px) */
-@media screen and (min-width:426px) and (max-width:759px) {
+@media screen and (min-width:426px) and (max-width:789px) {
   .slider2 .class {
     width: 280px;
     height: 40v;
@@ -187,6 +184,50 @@
   }
 }
 
+@media screen and (min-width: 427px) and (max-width: 789px) {
+  .trending {
+    flex-direction: row; /* show items in a row */
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+
+  .trending h1 {
+    font-size: 22px;
+  }
+
+  .trending a {
+    font-size: 16px;
+    display: inline-block; /* show links again on tablets */
+    padding-left: 10px;
+  }
+
+  .iconic {
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    width: 45%; /* two cards per row */
+    margin: 15px auto;
+    height: auto !important;
+  }
+
+  .card img {
+    width: 100%;
+    height: 160px; /* bigger image for tablets */
+    object-fit: cover;
+  }
+
+  .add-to-cart {
+    width: 40%;
+  }
+
+  .quantity input {
+    width: 70px;
+  }
+}
 
 
 
@@ -235,41 +276,49 @@
   }
 }
 
-/* @media  screen and (min-width:320px) and (max-width:426px) 
+
+@media screen and (min-width:426px) and (max-width:789px) {
   .mostjust {
-    width: 100%;
+    flex-direction: row;       
+    flex-wrap: wrap;
+    width: 95%;
+    height: auto;
+    padding: 25px;
+    gap: 20px;
+    text-align: center;
     border-radius: 20px;
-    margin-top: 50px;
-    padding: 15px;
   }
 
-  .mostjust h1 {
-    font-size: 20px;
-    text-align: center;
-    margin: 10px 0;
+  .mostjust .most,
+  .mostjust .just {
+    width: 48%;              
+    height: 80vh;
+    margin-bottom: 25px;
   }
 
   .mostjust .product-card {
-    padding: 10px;
+    height: 60vh;             
   }
 
   .mostjust .product-card img {
-    width: 120px;
-    height: 100px;
+    width: 180px;             
+    height: 150px;
   }
 
-  .mostjust .product-title1 {
-    font-size: 14px;
+  .most h1,
+  .just h1 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 1.8rem; 
+    padding: 17px 0px 0px 20px;      
   }
 
-  .mostjust .rating1,
-  .mostjust .price1 {
-    font-size: 13px;
+  .most .product {
+    margin-left: 0;          
   }
+}
 
-  .mostjust .add-to-cart1 {
-    font-size: 13px;
-    pa
+
 
 /* <!-- luxacreamy 151css --> */
 
@@ -324,7 +373,7 @@
 }
 
 
-@media (min-width: 426px) and (max-width: 759px) {
+@media (min-width: 426px) and (max-width: 789px) {
   .luxacreamy {
     flex-direction: column;
     height: auto;
@@ -402,7 +451,7 @@
   }
 }
 
-@media (min-width: 426px) and (max-width: 759px) {
+@media (min-width: 426px) and (max-width: 789px) {
   .blog {
     flex-direction: column;
     text-align: center;
@@ -410,7 +459,7 @@
   }
 
   .blogicon {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: auto;
     gap: 20px;
   }
@@ -436,7 +485,7 @@
 }
 
 /* People are looking for */
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 426px) {
   .container2 {
     width: 95%;
     margin: 0 auto;
@@ -461,6 +510,49 @@
     padding: 6px 12px; /* tighter padding */
   }
 }
+
+@media screen and (min-width:426px) and (max-width:789px) {
+  /* Container */
+  .container2 {
+    width: 90%; /* a bit wider on tablet */
+    margin: 0 auto;
+    padding: 0 15px; /* more breathing space */
+  }
+
+  /* Heading */
+  .container2 h2 {
+    font-size: clamp(1.2rem, 4vw, 2rem); /* scale up heading */
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  /* Tags wrapper */
+  .tags {
+    display: flex;
+    flex-wrap: wrap; /* allow multiple rows */
+    justify-content: center; /* center tags */
+    gap: 10px 15px; /* row and column spacing */
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  /* Each tag */
+  .tags span {
+    display: inline-block;
+    font-size: clamp(0.8rem, 2.5vw, 1rem); /* larger on tablet */
+    padding: 6px 14px; /* roomier tags */
+    background: #f0f0f0; /* chip style */
+    border-radius: 15px;
+    color: #444;
+    text-align: center;
+    white-space: nowrap; /* keep each tag in one line */
+    flex: 0 1 auto; /* let tags shrink/grow naturally */
+  }
+}
+
 
 
 
@@ -527,7 +619,7 @@
 }
 
 
-@media (min-width: 426px) and (max-width: 759px) {
+@media (min-width: 426px) and (max-width: 789px) {
   .form {
     flex-direction: column;
     height: auto;
@@ -593,10 +685,80 @@
   }
 }
 
+@media screen and (min-width:426px) and (max-width:789px) {
+  /* Main container */
+  .appstore {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 60px auto 0;
+    padding: 1rem;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  /* Left (Phone) & Right (App) sections */
+  .appstore .phone1,
+  .appstore .app {
+    width: 48%;
+  }
+
+  /* Headline / Text styling */
+  .app h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1.2rem, 2.5vw, 2rem); /* auto-scale font */
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  /* Phone image */
+  .phone1 img {
+    width: 90%;
+    height: 550px; /* responsive */
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  .phone1 img:hover {
+    transform: scale(1.03); /* smooth hover zoom */
+  }
+
+  /* App image */
+  .app img {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+    width: 90%; /* responsive width */
+    max-width: 280px; /* keep neat */
+    height: auto; /* auto scale */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .app img:hover {
+    transform: scale(1.05); /* smooth hover zoom */
+  }
+
+  /* Optional: small text under headline */
+  .app p {
+    font-size: clamp(0.8rem, 1.8vw, 1rem); /* auto-scale */
+    color: #444;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+
+
 
 
 /* our features */
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 426px) {
   .features1 {
     font-size: 24px; 
     padding-left: 0;
@@ -633,7 +795,7 @@
 
 
 /* Tablet screens (426px–768px) */
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 789px) {
   .features1 {
     font-size: 32px; 
     padding-left: 10px;
