@@ -186,6 +186,136 @@ header {
   }
 }
 
+ @media screen and (min-width: 426px) and (max-width: 789px) {
+  header {
+    display: flex !important;
+    justify-content:start !important;
+    align-items: center;
+    position: fixed; 
+    background-color: white; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3px 10px; /* slightly more horizontal space */
+    z-index: 1000;
+    flex-wrap: nowrap; /* keep one line */
+    border: 5px solid red;
+  }
+
+  .nav {
+    display: flex !important;
+    justify-content: start;
+    align-items: center;
+    position: fixed; 
+    background-color: white; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: nowrap; /* no wrapping */
+    border: 2px solid yellow;
+  }
+
+  /* Logo */
+  .logo img {
+    width: 110px; /* smaller logo for tablet */
+    cursor: pointer;
+  }
+
+  /* Search */
+  .search1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap; /* prevent wrap */
+    width: 300px;
+  }
+
+  .search1 select,
+  .search1 input {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 80px ;
+    outline: none;
+    font-size: 13px; /* slightly smaller */
+  }
+
+  .search1 select {
+    padding: 6px;
+    /* width: 10px; */
+  }
+
+  .search1 form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .search1 input {
+    border: none;
+    padding: 8px;
+    width: 180px; /* narrower input to fit */
+  }
+
+  .search1 img {
+    width: 18px;
+    margin: 0 8px;
+    cursor: pointer;
+  }
+
+  /* Phone / Right Side */
+  .phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; /* keep one line */
+    margin-left: 14px;
+  }
+
+  .phone p {
+    font-size: 13px;
+    color: #333;
+    margin: 0;
+  }
+
+  .phone img {
+    width: 20px;
+    cursor: pointer;
+  }
+
+  .phone button {
+    background: #ff7b00;
+    color: #fff;
+    border: none;
+    padding: 4px 14px; /* smaller padding */
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+  }
+
+  .phone button b:first-child {
+    font-size: 8px;
+  }
+
+  .phone button b:last-child {
+    font-size: 8px;
+  }
+
+  /* Hide hamburger icon on tablet view */
+  .hamburger {
+    display: none;
+  }
+} 
+
+
+
 /* General navbar styles */
 .nav2 {
   margin-top: 72px;
@@ -305,10 +435,11 @@ header {
   }
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 426px) and (max-width: 769px) {
   .nav2 {
     flex-wrap: wrap;
     padding: 10px 15px;
+    margin-top: 70px;
   }
 
   .dept select {
@@ -330,19 +461,6 @@ header {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .nav2 {
-    padding: 10px 30px;
-  }
-
-  .items ul {
-    margin-left: 80px;
-  }
-
-  .items ul li a {
-    padding: 10px 14px;
-  }
-}
 
 
 /* Photos Section */
@@ -459,22 +577,135 @@ header {
   }
 }
 
-/* catageory */
-.catageory h1,.brands h1{
-  font-family: "Nunito", sans-seri;
+@media (min-width: 426px) and (max-width: 789px) {
+
+  /* Photos container */
+  .photos {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row; /* two-column layout */
+  }
+
+  /* Each child as a card */
+  .photos .child1,
+  .photos .child2 {
+    width: 48%; /* two in a row */
+    background: #87b1e1;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px; /* internal padding for content */
+  }
+
+  /* Responsive images in child1 */
+  .photos .child1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  /* Make child2 stack fruit & baked */
+  .photos .child2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* space between fruit & baked */
+    height: auto; /* let content decide height */
+  }
+
+  /* Fruit & Baked cards inside child2 */
+  .fruit,
+  .baked {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* stack text + image neatly */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background: #d8dbde;
+    height: auto; /* auto height for better responsiveness */
+    box-sizing: border-box;
+  }
+
+  /* Fruit & Baked images */
+  .fruit2 img,
+  .baked2 img {
+    width: 119%; /* full width */
+    height: 80px; /* taller but not too tall */
+    object-fit: cover; /* maintain crop */
+    border-radius: 6px;
+    margin-bottom: px;
+  }
+
+  /* Text inside fruit/baked – improved font styling */
+  .fruit h3,
+  .baked h3 {
+    font-size: 16px; /* heading size */
+    font-weight: 600;
+    color: #4b0040;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+
+  .fruit h4,
+  .baked h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #5a0650;
+    margin-bottom: 4px;
+    text-align: center;
+  }
+
+  .fruit small,
+  .baked small {
+    font-size: 12px;
+    color: #6b6b6b;
+    display: block;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .fruit a,
+  .baked a {
+    font-size: 13px;
+    color: #8d086c;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    margin-top: 6px;
+  }
+
+  .fruit a:hover,
+  .baked a:hover {
+    text-decoration: underline;
+  }
+}
+
+
+
+
+
+
+   /* CATEGORY HEADING */
+
+.catageory h1,
+.brands h1 {
+  font-family: "Nunito", sans-serif;
   font-weight: 100;
   margin-left: 15px;
   padding-top: 50px;
 }
 
-
-/* slider */
-.slider,.slider2 {
+.slider,
+.slider2 {
   margin: 50px auto;
   display: grid;
   grid-auto-flow: column;
   gap: 1rem;
-  height: calc(200px +3rem);
+  height: calc(200px + 3rem);
   padding: 1rem;
   max-width: 1200px;
   overflow-x: auto;
@@ -483,32 +714,120 @@ header {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
-.slider b{
-  margin:0px 60px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+.slider b {
+  margin: 0px 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
   font-size: x-large;
 }
-.slider > a,.slider2 .class{
+
+.slider > a,
+.slider2 .class {
   scroll-snap-align: center;
   display: inline-block;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.slider img ,.slider2 .class{
+
+.slider img,
+.slider2 .class {
   height: 180px;
   width: 200px;
-  max-width: none;
   object-fit: cover;
   border-radius: 1rem;
   display: block;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 1.3s ease, box-shadow 0.3s ease;
 }
-.slider2 .class img{
+
+.slider2 .class img {
   align-items: center;
   justify-content: center;
   margin-top: 15px;
   border-radius: 10px;
+}
+
+
+/* make scrollbar thin */
+.slider::-webkit-scrollbar,
+.slider2::-webkit-scrollbar {
+  height: 6px; /* horizontal scrollbar thickness */
+}
+
+/* Track */
+.slider::-webkit-scrollbar-track,
+.slider2::-webkit-scrollbar-track {
+  background: rgba(150, 134, 166, 0.1);
+  border-radius: 2px;
+}
+
+/* Thumb (animated fire gradient) */
+.slider::-webkit-scrollbar-thumb,
+.slider2::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 69, 0, 0.7),
+    rgba(255, 140, 0, 0.885),
+    rgba(255, 217, 0, 0.903)
+  );
+  background-size: 200% 200%;
+  animation: fireMove 8s linear infinite;
+  border-radius: 3px;
+}
+
+@keyframes fireMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* On hover – a bit brighter */
+.slider::-webkit-scrollbar-thumb:hover,
+.slider2::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 69, 0, 0.9),
+    rgba(255, 140, 0, 0.9),
+    rgba(255, 215, 0, 0.9)
+  );
+}
+
+/* ============================
+   FIRE LINE UNDER SLIDER
+============================ */
+.orange-line {
+  display: block;
+  height: 10px;        /* thickness */
+  width: 110px;       /* width of line */
+  margin: 20px auto;  /* center */
+  background: linear-gradient(
+    270deg,
+    orange,
+    red,
+    yellow,
+    orange
+  );
+  background-size: 500% 500%;
+  border-radius: 3px;
+  animation: fireLine 4s linear infinite;
+}
+
+@keyframes fireLine {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .slider > a:hover img{
