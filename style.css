@@ -117,11 +117,6 @@ header {
   font-size: 15px;
 }
 
-.hamburger {
-  display: none; /* hidden on desktop */
-  font-size: 28px;
-  cursor: pointer;
-}
 @media screen and (min-width:320px) and (max-width:426px) {
   header {
     display: flex;
@@ -135,10 +130,6 @@ header {
   .nav{
     display: flex;
     flex-direction: column;
-  }
-  .hamburger {
-    display: block;
-    color: rgb(253, 10, 192); 
   }
   .nav .search1,
   .nav form,
