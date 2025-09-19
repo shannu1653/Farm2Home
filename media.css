@@ -1,9 +1,121 @@
+/* hide main toggle checkbox */
+.mobilenav #menu-toggle { display: none; }
+/* hide sub toggle checkbox */
+.mobilenav .has-sub input { display: none; }
+
+/* default hide on desktop */
+.mobilenav .hamburger,
+.mobilenav .minimenu,
+.mobilenav .hidenav { display: none; }
+
+/* MOBILE */
+@media screen and (min-width:320px) and (max-width:426px) {
+  .mobilenav { position: relative; }
+
+  /* hamburger */
+  .mobilenav .hamburger {
+    display: block;
+    position: fixed;
+    left: 12px;
+    top: 12px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1200;
+    color: rgb(253,10,192);
+    margin-top: -15px;
+  }
+
+  /* mini menu (first 3 items) */
+  .mobilenav .minimenu {
+    display: flex;
+    gap: 8px;
+    position: fixed;
+    left: 60px;
+    top: 12px;
+    z-index: 1100;
+  }
+  .mobilenav .minimenu a {
+    text-decoration: none;
+    padding: 6px 8px;
+    color: #333;
+  }
+
+  /* full off-canvas menu */
+  .mobilenav .hidenav {
+    display: block;
+    margin-top: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height:80vh;
+    width: 260px;
+    transform: translateX(-100%);
+    transition: transform 0.35s ease;
+    background: #cfcecf;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.18);
+    z-index: 1150;
+    overflow-y: auto;
+    padding-top: 20px;
+  }
+
+  .mobilenav .hidenav ul { list-style: none; margin: 0; padding: 0; }
+  .mobilenav .hidenav ul li > a,
+  .mobilenav .pages-link {
+    display: block;
+    padding: 12px 18px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+  }
+
+  .mobilenav .hidenav ul li > a:hover,
+  .mobilenav .pages-link:hover {
+    background: rgb(253,10,192);
+    color: #fff;
+  }
+
+  /* slide in menu when checked */
+  .mobilenav #menu-toggle:checked ~ .hidenav {
+    transform: translateX(0);
+  }
+  .mobilenav #menu-toggle:checked ~ .minimenu {
+    display: none; /* hide mini menu while full menu open */
+  }
+
+  /* hide sub-menu by default */
+  .mobilenav .has-sub .sub-menu {
+    display: none;
+  }
+
+  /* show sub-menu when its checkbox is checked */
+  .mobilenav .has-sub input:checked + .pages-link + .sub-menu {
+    display: block;
+  }
+
+  /* style sub-menu items */
+  .mobilenav .sub-menu li a {
+    padding-left: 32px; /* indent inside */
+    background: #f9f9f9;
+    border-bottom: 1px solid #eee;
+  }
+  .mobilenav .sub-menu li a:hover {
+    background: rgb(253,10,192);
+    color: #fff;
+  }
+}
+
+
+
+
+
+
+
+
+
 /* <!-- catageory --> */
 
 @media screen and (min-width:426px) and (max-width:789px) {
-  body {
-    border: 5px solid red;
-  }
 
   .slider,
   .slider2 {
@@ -42,7 +154,6 @@
     max-width: 100%;
     gap: 0.1rem;
     margin: 20px 0px;
-    border: 3px solid yellow;
 
   }
 
