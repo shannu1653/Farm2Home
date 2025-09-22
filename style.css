@@ -299,7 +299,6 @@ header {
     font-size: 8px;
   }
 
-  /* Hide hamburger icon on tablet view */
   .hamburger {
     display: none;
   }
@@ -587,10 +586,10 @@ header {
     background: #87b1e1;
     border-radius: 8px;
     box-sizing: border-box;
-    padding: 10px; /* internal padding for content */
+    padding: 10px; 
   }
 
-  /* Responsive images in child1 */
+
   .photos .child1 img {
     width: 100%;
     height: auto;
@@ -598,35 +597,34 @@ header {
     border-radius: 6px;
   }
 
-  /* Make child2 stack fruit & baked */
   .photos .child2 {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* space between fruit & baked */
-    height: auto; /* let content decide height */
+    gap: 15px; 
+    height: auto; 
   }
 
-  /* Fruit & Baked cards inside child2 */
+  
   .fruit,
   .baked {
     flex: 1;
     display: flex;
-    flex-direction: column; /* stack text + image neatly */
+    flex-direction: column; 
     justify-content: flex-start;
     align-items: center;
     padding: 15px;
     border-radius: 10px;
     background: #d8dbde;
-    height: auto; /* auto height for better responsiveness */
+    height: auto; 
     box-sizing: border-box;
   }
 
   /* Fruit & Baked images */
   .fruit2 img,
   .baked2 img {
-    width: 119%; /* full width */
-    height: 80px; /* taller but not too tall */
-    object-fit: cover; /* maintain crop */
+    width: 119%;
+    height: 80px; 
+    object-fit: cover; 
     border-radius: 6px;
     margin-bottom: px;
   }
@@ -634,7 +632,7 @@ header {
   /* Text inside fruit/baked – improved font styling */
   .fruit h3,
   .baked h3 {
-    font-size: 16px; /* heading size */
+    font-size: 16px; 
     font-weight: 600;
     color: #4b0040;
     margin-bottom: 4px;
@@ -789,14 +787,11 @@ header {
   );
 }
 
-/* ============================
-   FIRE LINE UNDER SLIDER
-============================ */
 .orange-line {
   display: block;
-  height: 10px;        /* thickness */
-  width: 110px;       /* width of line */
-  margin: 20px auto;  /* center */
+  height: 10px;     
+  width: 110px;       
+  margin: 20px auto;  
   background: linear-gradient(
     270deg,
     orange,
@@ -868,29 +863,15 @@ header {
   padding: 10px 50px; }
 .slider2 .class:hover {
   transform: scale(1.08);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 12px 24px rgba(235, 4, 204, 0.25);
   padding: 0px 10px;
 }
 
-.slider2 > .class:nth-child(1)  {
-  box-shadow: 0 4px 10px rgba(235, 2, 94, 1.3);
-}
-.slider2 > .class:nth-child(2)  {
-  box-shadow: 0 4px 10px rgba(235, 2, 94, 1.3);
-}
-.slider2 > .class:nth-child(3)  {
-  box-shadow: 0 4px 10px rgba(235, 2, 94, 1.3);
-}
-.slider2 > .class:nth-child(4)  {
-  box-shadow: 0 4px 10px rgba(235, 2, 94, 1.3);
-}
-.slider2 > .class:nth-child(5)  {
-  box-shadow: 0 4px 10px rgba(235, 2, 94, 1.3);
-}
-.slider2 > .class:nth-child(6)  {
-  box-shadow: 0 4px 10px rgba(235, 2, 94, 1.3);
-}
-.slider2 > .class:nth-child(7)  {
-  box-shadow: 0 4px 10px rgba(235, 2, 94, 1.3);
-}
-.slider2 > .class:nth-child(8)  {box-shadow: 0 4px 10px rgba(235, 2, 94, 1.3);}
+.slider2 > .class:nth-child(1)  {box-shadow: 0 4px 10px rgba(0, 900, 94, 2.3);}
+.slider2 > .class:nth-child(2)  {box-shadow: 0 4px 10px rgba(5, 2, 94, 1.3);}
+.slider2 > .class:nth-child(3)  {box-shadow: 0 4px 10px rgba(0, 90, 94, 1.3);}
+.slider2 > .class:nth-child(4)  {box-shadow: 0 4px 10px rgba(0, 900, 940, 2.3);}
+.slider2 > .class:nth-child(5)  {box-shadow: 0 4px 10px rgba(90, 2, 24, 1.3);}
+.slider2 > .class:nth-child(6)  {box-shadow: 0 4px 10px rgba(9, 100, 94, 1.3);}
+.slider2 > .class:nth-child(7)  {box-shadow: 0 4px 10px rgba(2000, 0, 54, 1.3);}
+.slider2 > .class:nth-child(8)  {box-shadow: 0 4px 10px rgba(500, 500, 24, 6.3);}
